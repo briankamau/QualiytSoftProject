@@ -1,0 +1,104 @@
+/**
+ * Class Person contains variables and methods required
+ * for creating and retrieving new contacts
+ * @author micaelakowalczyk
+ */
+package contact_list;
+public class Person implements Comparable<Person> { 
+
+	private String firstName;
+	private String lastName;
+	private String streetAddress; 
+	private String email;
+	private String phoneNumber;
+	private String notes;
+	
+	/**
+	 * constructor
+	 */
+		public Person(){
+		}
+	/**MK
+	 * sets first name to a person, returns void, parameter is String variable
+	 */
+		public void setFirstName(String newFirstName){
+		}
+	/**MK
+	 * sets last name to a person, returns void, parameter is String variable
+	 */
+		public void setLastName(String newlastName){	
+		}
+	/**MK
+	 * sets address, returns void, parameter is String variable
+	 */
+		public void setAddress(String newStreetAddress){
+		}	
+	/**MK
+	 * sets the email, returns void, parameter is String variable
+	 */
+		public void setEmail(String newEmail){	
+		}	
+	/**MK
+	 * sets the phone number, returns void, parameter is String variable
+	 */
+		public void setPhoneNumber(String newPhoneNumber){	
+		}		
+	/**MK
+	 * sets notes, returns void, parameter is String variable
+	 */
+		public void setNotes(String newNotes){	
+		}
+	/**MK
+	 * gets first name, returns String, and has no parameter
+	 */
+		public String getFirstName(){
+			return firstName;
+		}	
+	/**MK
+	 * gets last name, returns String, and has no parameter
+	 */
+		public String getLastName(){
+			return lastName;
+		}	
+	/**MK
+	 * gets address, returns String, and has no parameter
+	 */
+		public String getAddress(){		
+			return streetAddress;
+		}
+	/**MK
+	 * gets email, returns String, and has no parameter
+	 */
+		public String getEmail(){
+			return email;
+		}
+	/**MK
+	 * gets phone number, returns String, and has no parameter
+	 */
+		public String getPhoneNumber(){
+			return phoneNumber;
+		}	
+	/**MK
+	 * gets notes, returns String, no parameter
+	 */
+		public String  getNotes(){	
+			return notes;
+		}	
+	/**MK
+	 * method part of Comparable interface, parameter is the object 'o' that the info 
+	 * from class Person will be compared to, returns a value of -1, 0, or 1 depending if the expression 
+	 * has a negative positive or equal value from the comparison
+	 */
+		@Override
+		public int compareTo(Person o){	
+			return 0;		//from API
+		}
+	/**MK
+	 * toString method, returns as a String, there are no parameters
+	 * if called, will print all information regarding ONE contact
+	 */
+		public String toString(){
+			return firstName + "\n" + lastName + "\n" + streetAddress + "\n"
+								+ email + "\n" + phoneNumber + "\n" + notes  ;
+		}
+}
